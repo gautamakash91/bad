@@ -50,6 +50,9 @@ export default class App extends React.Component {
 
   render() {
     console.log(this.state.data);
+    if(this.state.data.length === 0){
+      return null
+    }
     return (
       <Grid container>
         <Grid item xs={12}>
